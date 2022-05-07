@@ -5,7 +5,7 @@ public class Ch5_8 {
 	public static void main(String[] args) {
 
 		// 배열의 활용
-		// 임의의 값으로 배열 채우기
+		// 섞기(shuffle)
 		int[] ball = new int[45];
 		
 		for(int i=0; i<ball.length; i++)
