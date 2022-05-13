@@ -30,7 +30,7 @@ public class Ch6_19 {
 		
 		System.out.println(mm.add());
 		System.out.println(mm.subtract());
-		System.out.println(mm.multiply());
+		System.out.println(mm.multiply());		
 		System.out.println(mm.divide());
 	}
 
