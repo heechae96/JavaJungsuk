@@ -1,7 +1,7 @@
 package ch07;
 
 import java.text.SimpleDateFormat;
-import java.util.Date;;
+import java.util.Date;
 
 public class Ch7_10 {
 
