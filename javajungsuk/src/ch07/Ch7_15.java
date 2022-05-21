@@ -12,7 +12,7 @@ public class Ch7_15 {
 		fe.water();
 		car = fe;	// car = (Car)fe;
 //		car.water();
-		fe2 = (FireEngin)car;	// 조상 -> 자손
+		fe2 = (FireEngin)car;	// 자손 <- 조상
 		fe2.water();
 	}
 
