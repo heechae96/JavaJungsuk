@@ -1,6 +1,6 @@
 package ch08;
 
-public class Ch8_4 {
+public class Ch8_5 {
 
 	public static void main(String[] args) {
 
@@ -9,11 +9,12 @@ public class Ch8_4 {
 		System.out.println(2);
 		try {
 			System.out.println(3);
+			System.out.println(0/0);	// 일부러 예외 발생
 			System.out.println(4);
-		}catch(Exception e){
+		}catch(ArithmeticException ae){
 			System.out.println(5);
 		}
-		System.out.println(6);
+		System.out.println(6);	
 	}
 
 }
