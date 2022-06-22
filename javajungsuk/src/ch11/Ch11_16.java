@@ -2,6 +2,8 @@ package ch11;
 
 import java.util.Iterator;
 
+// Ch11_4
+// Array클래스 내부(Vector클래스의 실제코드를 바탕으로 재구성)
 public class Ch11_16 extends Ch11_4 implements Iterator{
 // public class MyVector2 extends MyVector implements Iterator{	
 	// Iterator
