@@ -7,7 +7,7 @@ public class Ch11_39 {
 
 	public static void main(String[] args) {
 
-		// 한 종류의 객체만 저장하는 컬렉션 만들기
+		// Collections
 		
 		List list = new ArrayList();
 		System.out.println(list);
