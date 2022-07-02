@@ -20,3 +20,4 @@ class Child extends Parent{
 	void parentMethod() {}
 //	void parentmethod() {}
 }
+
