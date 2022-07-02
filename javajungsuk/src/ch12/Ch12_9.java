@@ -5,7 +5,7 @@ public class Ch12_9 {
 	public static void main(String[] args) {
 		
 		// 애너테이션
-		// @Override
+		// Override
 		
 	}
 
