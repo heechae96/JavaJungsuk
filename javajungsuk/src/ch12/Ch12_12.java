@@ -27,7 +27,7 @@ public class Ch12_12 {
 	public static void main(String[] args) {
 
 		// 애너테이션
-		// @SafeVarargs
+		// SafeVarargs
 		
 		MyArrayList<String> list = MyArrayList.asList("1","2","3");
 		System.out.println(list);
