@@ -7,7 +7,7 @@ public class Ch12_11 {
 	public static void main(String[] args) {
 
 		// 애너테이션
-		// @SuppressWarnings
+		// SuppressWarnings
 		
 		NewClass2 nc = new NewClass2();
 		
