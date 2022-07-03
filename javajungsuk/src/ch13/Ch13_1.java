@@ -4,7 +4,7 @@ public class Ch13_1 {
 
 	public static void main(String[] args) {
 
-		// 쓰레드
+		// 쓰레드의 구현과 실행
 		
 		ThreadEx1_1 t1 = new ThreadEx1_1();
 		
