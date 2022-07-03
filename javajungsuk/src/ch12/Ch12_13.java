@@ -12,7 +12,7 @@ public class Ch12_13 {
 	public static void main(String[] args) {
 
 		// 애너테이션
-		// 메타 애너테이션
+		// 메타 애너테이션 
 		
 		// Ch12_13의 Class객체를 얻는다
 		Class<Ch12_13> cls = Ch12_13.class;
