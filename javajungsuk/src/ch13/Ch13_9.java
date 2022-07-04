@@ -31,7 +31,7 @@ public class Ch13_9 {
 		System.out.println(">>List of ThreadGroup : " + main.getName() 
 					+", Active ThreadGroup: " + main.activeGroupCount() 
 					+", Active Thread: " + main.activeCount());
-		System.out.println("--------------------------------5");
+		System.out.println("--------------------------------");
 		main.list();
 	
 	}
