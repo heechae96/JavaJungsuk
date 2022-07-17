@@ -80,6 +80,7 @@ public class Ch14_15 {
 			Stream.of(stuArr).collect(partitioningBy(Student4::isMale, 
 				partitioningBy(s -> s.getScore() <= 100))
 			); 
+		//													성별			점수
 		List<Student4> failedMaleStu   = failedStuBySex.get(true).get(true);
 		List<Student4> failedFemaleStu = failedStuBySex.get(false).get(true);
 
