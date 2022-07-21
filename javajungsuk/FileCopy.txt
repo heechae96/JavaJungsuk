@@ -11,8 +11,10 @@ public class Ch15_6 {
 		try {
 //			FileInputStream fis = new FileInputStream(args[0]);
 //			FileOutputStream fos = new FileOutputStream(args[1]);
-			FileInputStream fis = new FileInputStream("/Users/shinheechae/git/javajungsuk/javajungsuk/src/ch15/Ch15_6.java");
-			FileOutputStream fos = new FileOutputStream("/Users/shinheechae/git/javajungsuk/javajungsuk/FileCopy.txt");
+			FileInputStream fis = new FileInputStream("/Users/shinheechae/"
+					+ "git/javajungsuk/javajungsuk/src/ch15/Ch15_6.java");
+			FileOutputStream fos = new FileOutputStream("/Users/shinheechae/"
+					+ "git/javajungsuk/javajungsuk/FileCopy.txt");
 			
 			int data = 0;
 			
