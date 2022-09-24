@@ -19,7 +19,7 @@ public class Ch5_5 {
         }
 
         // 배열 ballArr의 앞에서 3개의 수를 배열 ball3로 복사한다
-        // (2)
+        // (2) for문 대신 메소드를 사용해볼것(1줄)
         for(int i=0; i<ball3.length; i++){
             ball3[i] = ballArr[i];
         }

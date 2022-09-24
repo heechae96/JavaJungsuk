@@ -28,26 +28,25 @@ public class Ch5_7 {
             // 아래의 로직에 맞게 코드를 작성하시오
             // 1. 금액(money)을 동전단위로 나눠서 필요한 동전의 개수(coinNum)를 구한다
             coinNum = money / coinUnit[i];
+//            System.out.println("coinNum :" + coinNum);
 
             if (coinNum <= coin[i]) { // 충분한 동전이 있는 경우
                 // 2. 배열 coin에서 coinNum만큼의 동전을 뺀다
                 coin[i] -= coinNum;
-                // 3. 금액에서 동전의 개수(coinNum)와 동전단위를 곱한 값을 뺀다
-                money -= coinNum * coinUnit[i];
 //                System.out.print("잔액테스트 : money " + money + "\t");
-
-                System.out.println(coinUnit[i] + "원: " + coinNum);
-
             } else { // 충분한 동전이 없는 경우
                 coinNum = coin[i];
                 // 2. 배열 coin에서 coinNum만큼의 동전을 뺀다
                 coin[i] -= coinNum;
-                // 3. 금액에서 동전의 개수(coinNum)와 동전단위를 곱한 값을 뺀다
-                money -= coinNum * coinUnit[i];
+//                System.out.println("coin: " + coin[i]);
 //                System.out.print("잔액테스트 : money " + money + "\t");
 
-                System.out.println(coinUnit[i] + "원: " + coinNum);
             }
+            // 3. 금액에서 동전의 개수(coinNum)와 동전단위를 곱한 값을 뺀다
+            money -= coinNum * coinUnit[i];
+//            System.out.println(money);
+
+            System.out.println(coinUnit[i] + "원: " + coinNum);
         }
 
         if (money > 0) {

@@ -18,7 +18,7 @@ public class Ch5_4 {
                 total += arr[i][j];
             }
         }
-        average = (float) total / (arr.length * arr[1].length);
+        average = (float) total / (arr.length * arr[0].length);
         System.out.println("total = " + total);
         System.out.println("average = " + average);
     }
