@@ -1,4 +1,4 @@
-package Ch6;
+package ch6;
 
 public class Ch6_4 {
     public static void main(String[] args) {
