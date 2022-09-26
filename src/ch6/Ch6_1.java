@@ -27,6 +27,6 @@ class SutdaCard {
     }
 
     String info() {
-        return isKwang==true ? num+"K" : String.valueOf(num);
+        return isKwang==true ? num+"K" : num+"";
     }
 }

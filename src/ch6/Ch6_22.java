@@ -13,21 +13,21 @@ public class Ch6_22 {
 
     // isNumber메서드를 작성하시오
     static boolean isNumber(String str) {
-        boolean bool = false;
         char[] ch = str.toCharArray();
 
         if (ch == null) {
-            bool = false;
+            return false;
         } else {
             for (int i = 0; i < ch.length; i++) {
                 if (ch[i] >= '0' && ch[i] <= '9') {
-                    bool = true;
+                    return true;
                 } else {    // 숫자로 이루어지지 않았거나 공백일 경우
-                    bool = false;
+                    return false;
                 }
             }
         }
-        return bool;
+
+        return true;
     }
 
     public static void main(String[] args) {

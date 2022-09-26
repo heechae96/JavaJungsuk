@@ -10,10 +10,7 @@ public class Ch6_24 {
 
     // abs메서드를 작성하시오
     static int abs(int value) {
-        if (value < 0) {
-            value = -value;
-        }
-        return value;
+        return value < 0 ? value = -value : value;
     }
 
     public static void main(String[] args) {
