@@ -1,7 +1,5 @@
 //package ch7;
 //
-//import java.awt.*;
-//
 //public class Ch7_22 {
 //    // 아래는 도형을 정의한 Shape클래스이다.
 //    // 이 클래스를 조상으로 하는 Circle클래스와 Rectangle클래스를 작성하시오

@@ -1,23 +1,24 @@
 package ch7;
 
-class SutdaCard2{
-    final int num;
-    final boolean isKwang;
+class SutdaCard2 {
+    final int NUM;
+    final boolean IS_KWANG;
 
-    SutdaCard2(){
-        this(1,true);
+    SutdaCard2() {
+        this(1, true);
     }
 
-    SutdaCard2(int num, boolean isKwang){
-        this.num = num;
-        this.isKwang = isKwang;
+    SutdaCard2(int num, boolean isKwang) {
+        this.NUM = num;
+        this.IS_KWANG = isKwang;
     }
 
-    public String toString(){
-        return num + (isKwang ? "K" : "");
+    public String toString() {
+        return NUM + (IS_KWANG ? "K" : "");
     }
 
 }
+
 public class Ch7_14 {
     // 문제 7-1에 나오는 섯다카드의 숫자와 종류(isKwang)는 사실 한번 값이 지정되면
     // 변경되어서는 안되는 값이다.

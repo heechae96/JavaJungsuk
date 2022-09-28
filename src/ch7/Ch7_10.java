@@ -4,6 +4,7 @@ class MyTv2{
     boolean isPowerOn;
     int channel;
     int volume;
+    int prevChannel;    // 이전 채널
 
     final int MAX_VOLUME = 100;
     final int MIN_VOLUNE = 0;
@@ -20,6 +21,7 @@ class MyTv2{
     }
 
     void setChannel(int channel){
+        prevChannel = getChannel();
         this.channel = channel;
     }
 
@@ -34,8 +36,7 @@ class MyTv2{
     // 매개변수: 없음
     // 힌트. 이전 채널의 값을 저장할 멤버변수를 정의
     void gotoPrevChannel(){
-        int tmpChannel = getChannel();
-
+        setChannel(prevChannel);
     }
 
 }

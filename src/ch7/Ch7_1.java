@@ -7,15 +7,10 @@ class SutdaDeck {
     SutdaDeck() {
         // 배열 SutdaCard를 적절히 초기화 하시오
         for (int i = 0; i < cards.length; i++) {
-            if (i >= 10) {
-                cards[i] = new SutdaCard(i + 1 - 10, false);
-            } else {
-                cards[i] = new SutdaCard(i + 1, false);
-                if (i == 0 || i == 2 || i == 7) {
-                    cards[i] = new SutdaCard();
-                    cards[i].num = i + 1;
-                }
-            }
+            int num = i % 10 + 1;
+            boolean isKwang = (i < 10) && (num == 1 || num == 3 || num == 8);
+
+            cards[i] = new SutdaCard(num, isKwang);
         }
     }
 
@@ -27,12 +22,9 @@ class SutdaDeck {
     void shuffle() {
         for (int i = 0; i < cards.length; i++) {
             int random = (int) (Math.random() * cards.length);
-            int tmp = cards[i].num;
-            cards[i].num = cards[random].num;
-            cards[random].num = tmp;
-
-            // 1,3,8은 그대로 isKwang이 true.
-
+            SutdaCard tmp = cards[i];
+            cards[i] = cards[random];
+            cards[random] = tmp;
         }
     }
 
@@ -50,9 +42,10 @@ class SutdaDeck {
     // 반환타입: SutdaCard
     // 매개변수: 없음
     SutdaCard pick() {
-        int random = (int) (Math.random() * 20);
-        SutdaCard sutdaCard = cards[random];
-        return sutdaCard;
+        int random = (int) (Math.random() * cards.length);
+//        SutdaCard sutdaCard = cards[random];
+//        return sutdaCard;
+        return pick(random);
     }
 }
 

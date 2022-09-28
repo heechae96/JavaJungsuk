@@ -1,29 +1,29 @@
 package ch7;
 
-class Parent{
+class Parent {
     int x = 100;
 
-    Parent(){
+    Parent() {
         this(200);
     }
 
-    Parent(int x){
+    Parent(int x) {
         this.x = x;
     }
 
-    int getX(){
+    int getX() {
         return x;
     }
 }
 
-class Child extends Parent{
+class Child extends Parent {
     int x = 3000;
 
-    Child(){
+    Child() {
         this(1000);
     }
 
-    Child(int x){
+    Child(int x) {
         this.x = x;
     }
 }
@@ -47,7 +47,4 @@ public class Ch7_7 {
 
         System.out.println("x= " + c.getX());
     }
-
-
-
 }

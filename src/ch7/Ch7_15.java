@@ -19,6 +19,8 @@ public class Ch7_15 {
     // e. (Tank)u;
     // f. GroundUnit gu = t;
 
+    // 주의! 각 보기는 별개임
+    
     // 답: c
     //  -> u에는 ac(AirCraft)가 담겨져 있는데 이를 GroundUnit으로 형변환 할 수 없음
     // 답: e
